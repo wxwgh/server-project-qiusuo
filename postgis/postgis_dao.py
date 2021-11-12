@@ -6,7 +6,7 @@ class PostGisDao:
     def __init__(self):
         #打开数据连接
         self.conn= psycopg2.connect(
-            database="qiusuopg",
+            database="postgis",
             user="postgis",
             password="0",
             host="172.18.12.30",

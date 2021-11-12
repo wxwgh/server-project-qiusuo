@@ -9,5 +9,5 @@ app = Flask(__name__)
 app.register_blueprint(layertree_service, url_prefix="/layertree_service")
 
 if __name__ == '__main__':
-    # app.run(host='0.0.0.0',port="18000",debug=True)
-    app.run()
+    app.run(host='0.0.0.0',debug=True,port=15000)
+    # app.run()
