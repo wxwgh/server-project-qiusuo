@@ -6,8 +6,6 @@ from ui_services.update_bean import UpdateBean
 import json
 #蓝图创建
 layertree_service=Blueprint("layertree_service",__name__)
-#设置跨域
-CORS(layertree_service)
 
 #获取图层树配置服务
 @layertree_service.route("/get_layertree_config",methods=["GET"])

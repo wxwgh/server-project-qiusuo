@@ -6,10 +6,10 @@ class PostGisDao:
     def __init__(self):
         #打开数据连接
         self.conn= psycopg2.connect(
-            database="postgis",
+            database="postgres",
             user="postgis",
             password="0",
-            host="172.18.12.30",
+            host="192.168.84.30",
             port="5432"
         )
         #获取操作游标
